@@ -1,5 +1,6 @@
 #include "entities/player.h"
-#include "ray_utils.hpp"
+#include "tile_map.hpp"
+#include "box_collider.hpp"
 #include "GameManager.h"
 #include "raymath.h"
 #include "entities/finish.h"
