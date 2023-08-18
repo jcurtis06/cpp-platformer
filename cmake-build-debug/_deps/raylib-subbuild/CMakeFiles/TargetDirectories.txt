@@ -1,0 +1,3 @@
+C:/Users/06jcu/Documents/game dev/long-walk-home/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
+C:/Users/06jcu/Documents/game dev/long-walk-home/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/06jcu/Documents/game dev/long-walk-home/cmake-build-debug/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir
