@@ -14,5 +14,5 @@ public:
     Rectangle rect;
 
     void draw();
-    void next();
+    bool check_collision(Rectangle player_rect);
 };

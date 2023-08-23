@@ -3,6 +3,7 @@
 //
 
 #include "ray_utils.hpp"
+#include <string>
 
 // --- VECTOR2I ---
 Vector2i::Vector2i(int x, int y) : x(x), y(y) {}
@@ -84,7 +85,7 @@ void Animation::draw(Vector2i pos) {
     Rectangle source{
             (float)(texture.width / h_frames * x),
             (float)(texture.height / v_frames * y),
-            (float)(texture.width / h_frames),
+            (float)(flip_h ? -(texture.width / h_frames) : (texture.width / h_frames)),
             (float)(texture.height / v_frames)
     };
 

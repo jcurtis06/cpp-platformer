@@ -2,7 +2,22 @@
 // Created by 06jcu on 8/18/2023.
 //
 
-#ifndef RAYUTILS_LEVEL_2_H
-#define RAYUTILS_LEVEL_2_H
+#pragma once
 
-#endif //RAYUTILS_LEVEL_2_H
+#include "ray_utils.hpp"
+#include "entities/player.h"
+#include "entities/finish.h"
+
+class Level2 : public Scene {
+public:
+    void on_enter() override;
+    void update() override;
+    void draw() override;
+    void reload() override;
+    void on_exit() override;
+private:
+    Player m_player;
+    TileMap m_tile_map;
+    Camera2D m_camera = { 0 };
+    Finish m_finish;
+};

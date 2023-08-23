@@ -62,6 +62,8 @@ struct Animation {
     float frame_duration;
     float timer = 0;
 
+    bool flip_h = false;
+
     Animation(const Texture2D& texture,
                int h_frames, int v_frames,
                int start_frame, int end_frame,
@@ -89,6 +91,16 @@ struct TileMap {
     void draw();
     void add_collisions(std::string type, std::vector<BoxCollider*>& colliders);
     bool is_loaded();
+};
+
+class Scene {
+public:
+    virtual ~Scene() = default;
+    virtual void update() = 0;
+    virtual void draw() = 0;
+    virtual void on_enter() = 0;
+    virtual void on_exit() = 0;
+    virtual void reload() = 0;
 };
 
 namespace RayUtils {
